@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>指数全绿，超4300家下跌，钱去哪了？｜10.12复盘</title>
+<meta property="og:title" content="指数全绿，超4300家下跌，钱去哪了？｜10.12复盘" />
+<meta property="og:description" content="今天这盘面有点扎心，上证跌0.43%收在3797点，创业板指跌2.61%，全市场4325家下跌，只有1166家上涨。成交额1.55万亿，涨停59只跌停39只。影视院线、文化传媒逆势走强，贵金属、种植业跌得最狠。" />
+<meta property="og:image" content="https://gxj1991.github.io/RISE/images/chart-index.png" />
+<meta property="og:url" content="https://gxj1991.github.io/RISE/" />
+<meta property="og:type" content="article" />
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #fafbfc; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+  header { text-align: center; padding: 24px 0; border-bottom: 2px solid #e8e8ec; margin-bottom: 24px; }
+  header h1 { margin: 0; font-size: 26px; letter-spacing: -0.5px; }
+  header .date { color: #888888; font-size: 14px; margin-top: 6px; }
+  .datatime { display:inline-block; margin-top:8px; padding:2px 10px; border-radius:4px; background:rgba(7,163,90,0.1); color:#07a35a; font-size:12px; }
+  .card { background: #ffffff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 20px; margin-bottom: 20px; }
+  h2 { font-size: 18px; margin: 0 0 14px 0; padding-bottom: 8px; border-bottom: 2px solid #e94545; display: inline-block; }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  .tldr li { margin-bottom: 8px; color: #555555; }
+  .summary { color: #555555; font-size: 14px; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 14px; }
+  th, td { padding: 10px 8px; border-bottom: 1px solid #e8e8ec; text-align: left; }
+  th { color: #888888; font-weight: 600; font-size: 12px; background: #fafbfc; }
+  .code { font-family: "SFMono-Regular", Consolas, monospace; color: #888888; font-size: 12px; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:12px; font-weight:600; white-space:nowrap; }
+  .tag-1 { background:rgba(233,69,69,0.12); color:#e94545; }
+  .tag-2 { background:rgba(245,166,35,0.16); color:#b9770b; }
+  .tag-3 { background:rgba(7,163,90,0.12); color:#07a35a; }
+  .chart { width: 100%; height: 360px; margin: 16px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+  .analysis { color: #555555; font-size: 14px; line-height: 1.8; }
+  .analysis p { margin: 0 0 10px 0; }
+  .risk { background: rgba(233,69,69,0.06); border-left: 4px solid #e94545; padding: 12px 16px; border-radius: 0 8px 8px 0; color: #555555; font-size: 14px; }
+  footer { text-align: center; color: #888888; font-size: 12px; padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>A股每日复盘</h1>
+    <div class="date">2026年10月12日 星期一</div>
+    <div class="datatime">收盘数据（2026-10-12 15:30 收盘）</div>
+  </header>
+
+  <section class="card"><p class="analysis" style="font-size:14px;line-height:1.8">说实话，今天收盘我盯着屏幕愣了好几秒。指数跌幅看着不大，上证才跌0.43%，但翻开涨跌家数一看，4325家下跌，上涨的才1166家，这体感比指数难看得多。手里没踩中传媒和风电的，今天大概率是绿油油一片。</p></section>
+
+  <section class="card tldr">
+    <h2>核心结论</h2>
+    <ul><li>上证跌0.43%收3797点，创业板指跌2.61%，指数分化明显。</li>
+<li>全市场4325家下跌，上涨仅1166家，普跌格局，体感比指数差。</li>
+<li>成交额1.55万亿，量能不算小，但钱明显在往少数板块挤。</li>
+<li>影视院线、文化传媒、风电设备逆势领涨，贵金属、种植业领跌。</li>
+<li>涨停59只跌停39只，情绪偏退潮，但没到冰点，局部还有热度。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">指数跌得不多，但个股跌得挺疼，先看全景。</p>
+    <h2>大盘概况</h2>
+    <p class="summary">上涨1166家，下跌4325家，平盘82家。涨停59只，跌停39只。这数据摆出来，普跌没跑了，赚钱的人少，亏钱的人多。 两市成交1.55万亿，量能其实不算低，但钱没铺开，都挤在传媒、风电、银行这几个方向，其他板块失血明显。</p>
+    <table>
+      <thead><tr><th>指数</th><th>点位</th><th>涨跌幅</th><th>成交额（亿元）</th></tr></thead>
+      <tbody><tr><td>上证指数</td><td>3,797.24</td><td style="color:#07a35a;font-weight:600">-0.43%</td><td>7,149.10</td></tr>
+<tr><td>科创50</td><td>1,426.72</td><td style="color:#07a35a;font-weight:600">-2.10%</td><td>646.17</td></tr>
+<tr><td>深证成指</td><td>12,384.87</td><td style="color:#07a35a;font-weight:600">-2.03%</td><td>8,229.11</td></tr>
+<tr><td>创业板指</td><td>2,963.82</td><td style="color:#07a35a;font-weight:600">-2.61%</td><td>3,923.34</td></tr></tbody>
+    </table>
+    <div id="chartIndex" class="chart"></div>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">一边是传媒风电在涨，一边是贵金属在挨打。</p>
+    <h2>板块资金异动分析</h2>
+    <div class="two-col">
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块涨幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>影视院线</td><td style="color:#e94545;font-weight:600">+3.67%</td><td>欢瑞世纪 (000892)</td><td style="color:#e94545;font-weight:600">+10.10%</td></tr>
+<tr><td>2</td><td>文化传媒</td><td style="color:#e94545;font-weight:600">+2.37%</td><td>果麦文化 (301052)</td><td style="color:#e94545;font-weight:600">+20.01%</td></tr>
+<tr><td>3</td><td>风电设备</td><td style="color:#e94545;font-weight:600">+2.34%</td><td>振宏股份 (920200)</td><td style="color:#e94545;font-weight:600">+13.94%</td></tr>
+<tr><td>4</td><td>银行</td><td style="color:#e94545;font-weight:600">+1.99%</td><td>渝农商行 (601077)</td><td style="color:#e94545;font-weight:600">+4.95%</td></tr>
+<tr><td>5</td><td>游戏</td><td style="color:#e94545;font-weight:600">+0.86%</td><td>名臣健康 (002919)</td><td style="color:#e94545;font-weight:600">+6.86%</td></tr>
+<tr><td>6</td><td>汽车整车</td><td style="color:#e94545;font-weight:600">+0.43%</td><td>赛力斯 (601127)</td><td style="color:#e94545;font-weight:600">+10.00%</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块跌幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领跌股</th><th>跌幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>贵金属</td><td style="color:#07a35a;font-weight:600">-4.71%</td><td>紫金矿业 (601899)</td><td style="color:#07a35a;font-weight:600">-1.88%</td></tr>
+<tr><td>2</td><td>种植业与林业</td><td style="color:#07a35a;font-weight:600">-4.62%</td><td>海南橡胶 (601118)</td><td style="color:#e94545;font-weight:600">+4.19%</td></tr>
+<tr><td>3</td><td>能源金属</td><td style="color:#07a35a;font-weight:600">-3.95%</td><td>*ST威领 (002667)</td><td style="color:#e94545;font-weight:600">+10.01%</td></tr>
+<tr><td>4</td><td>元件</td><td style="color:#07a35a;font-weight:600">-3.75%</td><td>弘信电子 (300657)</td><td style="color:#e94545;font-weight:600">+2.98%</td></tr>
+<tr><td>5</td><td>小金属</td><td style="color:#07a35a;font-weight:600">-3.63%</td><td>宜安科技 (300328)</td><td style="color:#e94545;font-weight:600">+0.60%</td></tr>
+<tr><td>6</td><td>油气开采及服务</td><td style="color:#07a35a;font-weight:600">-3.46%</td><td>新潮能源 (600777)</td><td style="color:#e94545;font-weight:600">+2.18%</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="chartSector" class="chart"></div>
+    <h3 style="font-size:15px;margin:20px 0 10px 0;color:#1a1a1a">概念板块涨幅 TOP6</h3>
+    <table>
+      <thead><tr><th>#</th><th>概念</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+      <tbody><tr><td>1</td><td>短剧游戏</td><td style="color:#e94545;font-weight:600">+1.86%</td><td>果麦文化 (301052)</td><td style="color:#e94545;font-weight:600">+20.01%</td></tr>
+<tr><td>2</td><td>AI视频</td><td style="color:#e94545;font-weight:600">+1.53%</td><td>因赛集团 (300781)</td><td style="color:#e94545;font-weight:600">+12.09%</td></tr>
+<tr><td>3</td><td>知识产权保护</td><td style="color:#e94545;font-weight:600">+1.44%</td><td>莱美药业 (300006)</td><td style="color:#e94545;font-weight:600">+19.93%</td></tr>
+<tr><td>4</td><td>AI语料</td><td style="color:#e94545;font-weight:600">+1.24%</td><td>慈文传媒 (002343)</td><td style="color:#e94545;font-weight:600">+10.03%</td></tr>
+<tr><td>5</td><td>证金持股</td><td style="color:#e94545;font-weight:600">+1.21%</td><td>长城汽车 (601633)</td><td style="color:#e94545;font-weight:600">+3.19%</td></tr>
+<tr><td>6</td><td>赛马概念</td><td style="color:#e94545;font-weight:600">+1.21%</td><td>新华都</td><td style="color:#e94545;font-weight:600">+10.00%</td></tr></tbody>
+    </table>
+    <div id="chartStocks" class="chart"></div>
+    <p class="summary">今天资金明显在做切换。影视院线涨3.67%、文化传媒涨2.37%、风电设备涨2.34%、银行涨1.99%，这几个方向吸走了不少活跃资金。反过来看，贵金属跌4.71%、种植业跌4.62%、能源金属跌3.95%、元件跌3.75%，前期热门的有色资源类被抛得厉害。说白了，钱在从周期资源往传媒和防御性板块挪。</p>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">今天涨停的这批票，有个共同点挺有意思。</p>
+    <h2>热门个股分析</h2>
+    <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">涨幅 TOP20</h3>
+    <table>
+      <thead><tr><th>#</th><th>名称</th><th>代码</th><th>涨跌幅</th><th>最新价</th><th>所属方向</th></tr></thead>
+      <tbody><tr><td>1</td><td>果麦文化</td><td class="code">301052</td><td style="color:#e94545;font-weight:600">+20.01%</td><td>30.47</td><td></td></tr>
+<tr><td>2</td><td>博汇科技</td><td class="code">688004</td><td style="color:#e94545;font-weight:600">+20.01%</td><td>37.25</td><td></td></tr>
+<tr><td>3</td><td>金冠电气</td><td class="code">688517</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>21.18</td><td></td></tr>
+<tr><td>4</td><td>金丹科技</td><td class="code">300829</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>28.02</td><td></td></tr>
+<tr><td>5</td><td>阿莱德</td><td class="code">301419</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>47.70</td><td></td></tr>
+<tr><td>6</td><td>*ST仕净</td><td class="code">301030</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>4.50</td><td></td></tr>
+<tr><td>7</td><td>首航新能</td><td class="code">301658</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>27.12</td><td></td></tr>
+<tr><td>8</td><td>莱美药业</td><td class="code">300006</td><td style="color:#e94545;font-weight:600">+19.93%</td><td>6.56</td><td></td></tr>
+<tr><td>9</td><td>*ST康乐</td><td class="code">920575</td><td style="color:#e94545;font-weight:600">+17.51%</td><td>5.57</td><td></td></tr>
+<tr><td>10</td><td>鑫宏业</td><td class="code">301310</td><td style="color:#e94545;font-weight:600">+16.36%</td><td>69.93</td><td></td></tr>
+<tr><td>11</td><td>中荣股份</td><td class="code">301223</td><td style="color:#e94545;font-weight:600">+15.36%</td><td>21.11</td><td></td></tr>
+<tr><td>12</td><td>振宏股份</td><td class="code">920200</td><td style="color:#e94545;font-weight:600">+13.94%</td><td>32.20</td><td></td></tr>
+<tr><td>13</td><td>崧盛股份</td><td class="code">301002</td><td style="color:#e94545;font-weight:600">+13.28%</td><td>30.70</td><td></td></tr>
+<tr><td>14</td><td>因赛集团</td><td class="code">300781</td><td style="color:#e94545;font-weight:600">+12.09%</td><td>30.60</td><td></td></tr>
+<tr><td>15</td><td>路德科技</td><td class="code">688156</td><td style="color:#e94545;font-weight:600">+11.40%</td><td>25.40</td><td></td></tr>
+<tr><td>16</td><td>理工导航</td><td class="code">688282</td><td style="color:#e94545;font-weight:600">+11.29%</td><td>55.97</td><td></td></tr>
+<tr><td>17</td><td>金刚光伏</td><td class="code">300093</td><td style="color:#e94545;font-weight:600">+11.22%</td><td>21.70</td><td></td></tr>
+<tr><td>18</td><td>威力传动</td><td class="code">300904</td><td style="color:#e94545;font-weight:600">+10.42%</td><td>52.78</td><td></td></tr>
+<tr><td>19</td><td>广电网络</td><td class="code">600831</td><td style="color:#e94545;font-weight:600">+10.14%</td><td>3.91</td><td></td></tr>
+<tr><td>20</td><td>善水科技</td><td class="code">301190</td><td style="color:#e94545;font-weight:600">+10.14%</td><td>48.45</td><td></td></tr></tbody>
+    </table>
+    <div class="analysis"><p><strong>重点个股解析：</strong>今天涨停榜挺有看头。果麦文化、博汇科技、金冠电气、金丹科技、阿莱德这批20cm涨停的，多数是小盘题材股。ST仕净和ST康乐也封板了，ST股能涨停说明有资金在博重组或超跌反弹。鑫宏业涨16.36%但没封住，中荣股份涨15.36%，说明高位分歧也在加大。整体看，涨停结构偏小盘、偏题材，不是大资金主导的普涨。</p></div>
+  </section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">涨停59跌停39，这个数字说明情绪到哪了？</p><h2>市场情绪温度计</h2><p class="summary">情绪定级：<strong style="color:#07a35a;font-size:16px">退潮</strong></p><p class="summary">涨停59只，跌停39只，上涨1166家，下跌4325家。</p><div class="analysis"><p>今天情绪明显是退潮的节奏。涨停数不到60，跌停却有39只，涨跌家数比接近1比4，说明亏钱效应在扩散。跟前几天比，热度是降下来的，资金在收缩战线。明天情绪大概率还是偏谨慎，除非有新的强催化出来，否则别指望一下子回暖。</p></div></section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">盘后这几份公告，有两条值得多看两眼。</p><h2>公告速评</h2><p class="summary">只基于公告原文说话，不猜小作文。</p><div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">分众传媒(002027)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：公司收到市场监管总局附加限制性条件批准收购新潮传媒股权的反垄断审查决定。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：这意味着这笔收购过了最关键的反垄断关，后面就是走流程，对分众的梯媒格局有实质影响。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">*ST威领(002667)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：西藏山南锑金资源要约收购公司股份结果出炉，股票复牌。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：要约收购落地加上复牌，ST股里这种事件驱动最容易引发短线资金关注，波动不会小。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">东百集团(600693)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：拟收购杭州快灵光电科技部分股权，同时收到交易所监管工作函。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：一边公告收购一边收监管函，说明这笔交易被交易所盯上了，后面要看公司怎么回复。</p></div></section>
+
+  <section class="card" style="background:rgba(245,166,35,0.05);border-left:4px solid #b9770b;"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">大家都在骂普跌，但有个数据其实不太一样。</p><h2>反共识一刻</h2><div class="analysis"><p>今天大家都在说普跌惨烈，但有个数据被忽略了：成交额还有1.55万亿，并没缩量。这说明不是资金跑了，而是钱在换地方。传媒、风电、银行这些逆势板块吸走了活跃资金。换句话说，这不是全面撤退，是一次比较剧烈的调仓。被砸的板块未必是基本面出问题，可能只是资金短期挪了个窝。</p></div></section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">今天盘中这几件事，可能是资金调仓的由头。</p>
+    <h2>核心催化剂与新闻导读</h2>
+    <ul style="padding-left:20px;color:#555555;font-size:14px;line-height:1.8;"><li>影视院线板块今天涨3.67%，欢瑞世纪涨停，短剧游戏概念跟着涨1.86%，传媒方向有资金在持续做。</li>
+<li>风电设备涨2.34%，振宏股份涨13.94%领涨，新能源里的风电分支今天明显强于光伏和锂电。</li>
+<li>银行板块涨1.99%，渝农商行涨4.95%，防御性资金在往低估值高股息方向躲。</li>
+<li>贵金属跌4.71%，紫金矿业跌1.88%，前期强势的有色资源今天被集中抛售。</li>
+<li>分众传媒收购新潮传媒获反垄断附条件批准，梯媒行业格局可能生变。</li>
+<li>汽车整车涨0.43%，赛力斯涨停，新能源车方向还有局部热度。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">跌成这样，明天是继续扛还是先躲一躲？</p>
+    <h2>后市研判与策略建议</h2>
+    <div class="analysis"><p>今天这盘面，说白了就是指数撑着、个股挨打。上证靠银行和权重扛着才只跌0.43%，但创业板指跌2.61%才是真实体感。我的看法是，短期别急着抄底那些跌得狠的周期资源股，资金现在明显在往传媒、风电、银行这几个方向集中，趋势没走完之前逆着来容易吃亏。但也要注意，传媒和短剧游戏已经涨了几天了，追高的风险在积累。明天重点看两件事：一是成交额能不能维持住1.5万亿以上，二是跌停数会不会继续增加。如果跌停数继续扩，说明退潮还没结束，那就先管住手。风险提示：以上只是我个人复盘，不构成任何投资建议，市场有风险，操作需谨慎。</p></div>
+    <div class="risk" style="margin-top:16px;">⚠️ 风险提示：以上分析基于公开数据整理，不构成投资建议。市场有风险，投资需谨慎。</div>
+  </section>
+
+  <section class="card" style="background:rgba(233,69,69,0.05);border-left:4px solid #e94545"><p class="analysis" style="font-size:14px;line-height:1.8">今天你手里是红的还是绿的？有没有踩中传媒和风电的？还是被贵金属和种植业埋了？评论区聊聊，我看看今天到底多少人跟我一样在扛。</p></section>
+
+  <footer>
+    数据来源：公开市场数据 | 报告生成于 2026-10-12 15:30（收盘）<br/>
+    <a href="https://gxj1991.github.io/RISE/" style="color:#e94545;text-decoration:none;">查看历史报告</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var RED = "#e94545";
+  var GREEN = "#07a35a";
+  function color(v){ return v >= 0 ? RED : GREEN; }
+
+  var indexData = [{"name": "上证指数", "value": -0.43}, {"name": "科创50", "value": -2.1}, {"name": "深证成指", "value": -2.03}, {"name": "创业板指", "value": -2.61}];
+  echarts.init(document.getElementById("chartIndex")).setOption({
+    tooltip: { trigger: "axis", formatter: function(p){ var d=p[0]; return d.name + "：" + (d.value>=0?"+":"") + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "4%", bottom: "3%", containLabel: true },
+    xAxis: { type: "category", data: indexData.map(function(i){ return i.name; }), axisLabel: { color: "#555555" } },
+    yAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    series: [{ type: "bar", data: indexData.map(function(i){ return { value: i.value, itemStyle: { color: color(i.value) } }; }), barWidth: "45%",
+      label: { show: true, position: "top", formatter: function(p){ return (p.value>=0?"+":"") + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var sectorData = [{"name": "影视院线", "value": 3.67}, {"name": "文化传媒", "value": 2.37}, {"name": "风电设备", "value": 2.34}, {"name": "银行", "value": 1.99}, {"name": "游戏", "value": 0.86}, {"name": "汽车整车", "value": 0.43}];
+  echarts.init(document.getElementById("chartSector")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: sectorData.map(function(s){ return s.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: sectorData.map(function(s){ return { value: s.value, itemStyle: { color: color(s.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var conceptData = [{"name": "短剧游戏", "value": 1.86}, {"name": "AI视频", "value": 1.53}, {"name": "知识产权保护", "value": 1.44}, {"name": "AI语料", "value": 1.24}, {"name": "证金持股", "value": 1.21}, {"name": "赛马概念", "value": 1.21}];
+  echarts.init(document.getElementById("chartStocks")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: conceptData.map(function(c){ return c.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: conceptData.map(function(c){ return { value: c.value, itemStyle: { color: color(c.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+})();
+</script>
+</body>
+</html>
