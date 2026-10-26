@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>指数红了，账户绿了，这行情咋玩？｜10.26复盘</title>
+<meta property="og:title" content="指数红了，账户绿了，这行情咋玩？｜10.26复盘" />
+<meta property="og:description" content="沪指微涨0.19%，创业板却跌1.71%，超3100家下跌，成交额1.62万亿。游戏、白酒、保险撑场面，半导体、元件被砸。涨停75只跌停54只，情绪不温不火。" />
+<meta property="og:image" content="https://gxj1991.github.io/RISE/images/chart-index.png" />
+<meta property="og:url" content="https://gxj1991.github.io/RISE/" />
+<meta property="og:type" content="article" />
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #fafbfc; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+  header { text-align: center; padding: 24px 0; border-bottom: 2px solid #e8e8ec; margin-bottom: 24px; }
+  header h1 { margin: 0; font-size: 26px; letter-spacing: -0.5px; }
+  header .date { color: #888888; font-size: 14px; margin-top: 6px; }
+  .datatime { display:inline-block; margin-top:8px; padding:2px 10px; border-radius:4px; background:rgba(7,163,90,0.1); color:#07a35a; font-size:12px; }
+  .card { background: #ffffff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 20px; margin-bottom: 20px; }
+  h2 { font-size: 18px; margin: 0 0 14px 0; padding-bottom: 8px; border-bottom: 2px solid #e94545; display: inline-block; }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  .tldr li { margin-bottom: 8px; color: #555555; }
+  .summary { color: #555555; font-size: 14px; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 14px; }
+  th, td { padding: 10px 8px; border-bottom: 1px solid #e8e8ec; text-align: left; }
+  th { color: #888888; font-weight: 600; font-size: 12px; background: #fafbfc; }
+  .code { font-family: "SFMono-Regular", Consolas, monospace; color: #888888; font-size: 12px; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:12px; font-weight:600; white-space:nowrap; }
+  .tag-1 { background:rgba(233,69,69,0.12); color:#e94545; }
+  .tag-2 { background:rgba(245,166,35,0.16); color:#b9770b; }
+  .tag-3 { background:rgba(7,163,90,0.12); color:#07a35a; }
+  .chart { width: 100%; height: 360px; margin: 16px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+  .analysis { color: #555555; font-size: 14px; line-height: 1.8; }
+  .analysis p { margin: 0 0 10px 0; }
+  .risk { background: rgba(233,69,69,0.06); border-left: 4px solid #e94545; padding: 12px 16px; border-radius: 0 8px 8px 0; color: #555555; font-size: 14px; }
+  footer { text-align: center; color: #888888; font-size: 12px; padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>A股每日复盘</h1>
+    <div class="date">2026年10月26日 星期一</div>
+    <div class="datatime">收盘数据（2026-10-26 15:30 收盘）</div>
+  </header>
+
+  <section class="card"><p class="analysis" style="font-size:14px;line-height:1.8">今天这盘面看得我有点分裂。早上打开软件，沪指红彤彤，心里还美了一下，结果切到自选股，一片绿油油，瞬间清醒。这行情，赚了指数不赚钱，真不是说着玩的。</p></section>
+
+  <section class="card tldr">
+    <h2>核心结论</h2>
+    <ul><li>沪指涨0.19%但创业板跌1.71%，指数分化严重，小盘成长股挨揍。</li>
+<li>上涨2252家，下跌3156家，跌多涨少，赚钱效应其实一般。</li>
+<li>成交额1.62万亿，量能不算小，但资金全往游戏、白酒、保险里躲。</li>
+<li>涨停75只跌停54只，跌停数偏多，高位股退潮迹象明显。</li>
+<li>半导体、元件板块大跌，科技股集体调整，风格切换信号得留意。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">指数红了个寂寞，你的账户还好吗？</p>
+    <h2>大盘概况</h2>
+    <p class="summary">上涨2252家，下跌3156家，平盘168家。跌的比涨的多出900来家，别看沪指是红的，大部分人的票估计都在跌。 两市成交1.62万亿，量能不算小，但指数没怎么动，放量滞涨的味道有点浓。资金在板块间乱窜，没形成合力。</p>
+    <table>
+      <thead><tr><th>指数</th><th>点位</th><th>涨跌幅</th><th>成交额（亿元）</th></tr></thead>
+      <tbody><tr><td>上证指数</td><td>3,697.52</td><td style="color:#e94545;font-weight:600">+0.19%</td><td>7,465.28</td></tr>
+<tr><td>科创50</td><td>1,315.50</td><td style="color:#07a35a;font-weight:600">-2.23%</td><td>816.97</td></tr>
+<tr><td>深证成指</td><td>11,534.38</td><td style="color:#07a35a;font-weight:600">-1.20%</td><td>8,622.57</td></tr>
+<tr><td>创业板指</td><td>2,638.23</td><td style="color:#07a35a;font-weight:600">-1.71%</td><td>4,281.42</td></tr></tbody>
+    </table>
+    <div id="chartIndex" class="chart"></div>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">游戏白酒保险在涨，科技股却崩了，为啥？</p>
+    <h2>板块资金异动分析</h2>
+    <div class="two-col">
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块涨幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>游戏</td><td style="color:#e94545;font-weight:600">+3.29%</td><td>盛天网络 (300494)</td><td style="color:#e94545;font-weight:600">+14.62%</td></tr>
+<tr><td>2</td><td>医药商业</td><td style="color:#e94545;font-weight:600">+3.09%</td><td>百洋医药 (301015)</td><td style="color:#e94545;font-weight:600">+10.62%</td></tr>
+<tr><td>3</td><td>白酒</td><td style="color:#e94545;font-weight:600">+2.50%</td><td>皇台酒业 (000995)</td><td style="color:#e94545;font-weight:600">+10.04%</td></tr>
+<tr><td>4</td><td>油气开采及服务</td><td style="color:#e94545;font-weight:600">+2.30%</td><td>中海油服 (601808)</td><td style="color:#e94545;font-weight:600">+7.23%</td></tr>
+<tr><td>5</td><td>保险</td><td style="color:#e94545;font-weight:600">+1.72%</td><td>中国太保 (601601)</td><td style="color:#e94545;font-weight:600">+3.50%</td></tr>
+<tr><td>6</td><td>银行</td><td style="color:#e94545;font-weight:600">+1.52%</td><td>工商银行 (601398)</td><td style="color:#e94545;font-weight:600">+3.12%</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块跌幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领跌股</th><th>跌幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>元件</td><td style="color:#07a35a;font-weight:600">-5.93%</td><td>胜宏科技 (300476)</td><td style="color:#e94545;font-weight:600">+2.47%</td></tr>
+<tr><td>2</td><td>贵金属</td><td style="color:#07a35a;font-weight:600">-3.91%</td><td>中金黄金 (600489)</td><td style="color:#07a35a;font-weight:600">-1.73%</td></tr>
+<tr><td>3</td><td>半导体</td><td style="color:#07a35a;font-weight:600">-3.84%</td><td>芯海科技 (688595)</td><td style="color:#e94545;font-weight:600">+6.82%</td></tr>
+<tr><td>4</td><td>电子化学品</td><td style="color:#07a35a;font-weight:600">-3.65%</td><td>硅烷科技 (920402)</td><td style="color:#e94545;font-weight:600">+0.55%</td></tr>
+<tr><td>5</td><td>其他电子</td><td style="color:#07a35a;font-weight:600">-3.58%</td><td>汉朔科技 (301275)</td><td style="color:#e94545;font-weight:600">+5.07%</td></tr>
+<tr><td>6</td><td>电机</td><td style="color:#07a35a;font-weight:600">-2.83%</td><td>华阳智能 (301502)</td><td style="color:#e94545;font-weight:600">+20.00%</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="chartSector" class="chart"></div>
+    <h3 style="font-size:15px;margin:20px 0 10px 0;color:#1a1a1a">概念板块涨幅 TOP6</h3>
+    <table>
+      <thead><tr><th>#</th><th>概念</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+      <tbody><tr><td>1</td><td>乳业</td><td style="color:#e94545;font-weight:600">+2.12%</td><td>青岛食品 (001219)</td><td style="color:#e94545;font-weight:600">+10.02%</td></tr>
+<tr><td>2</td><td>证金持股</td><td style="color:#e94545;font-weight:600">+1.97%</td><td>中海油服 (601808)</td><td style="color:#e94545;font-weight:600">+7.23%</td></tr>
+<tr><td>3</td><td>免税店</td><td style="color:#e94545;font-weight:600">+1.79%</td><td>招商蛇口 (001979)</td><td style="color:#e94545;font-weight:600">+8.08%</td></tr>
+<tr><td>4</td><td>芬太尼</td><td style="color:#e94545;font-weight:600">+1.75%</td><td>恩华药业 (002262)</td><td style="color:#e94545;font-weight:600">+3.55%</td></tr>
+<tr><td>5</td><td>网络游戏</td><td style="color:#e94545;font-weight:600">+1.68%</td><td>盛天网络 (300494)</td><td style="color:#e94545;font-weight:600">+14.62%</td></tr>
+<tr><td>6</td><td>可燃冰</td><td style="color:#e94545;font-weight:600">+1.65%</td><td>中海油服 (601808)</td><td style="color:#e94545;font-weight:600">+7.23%</td></tr></tbody>
+    </table>
+    <div id="chartStocks" class="chart"></div>
+    <p class="summary">资金今天明显从科技成长往低估值防御板块挪。游戏、医药商业、白酒、保险、银行都在吸金，半导体、元件、贵金属被砸得最狠。元件板块跌了快6个点，半导体跌近4个点，科技股这波调整不是闹着玩的。资金避险情绪升温，但也没完全撤退，还在场内找机会。</p>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">涨停板上一堆生面孔，你认识几个？</p>
+    <h2>热门个股分析</h2>
+    <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">涨幅 TOP20</h3>
+    <table>
+      <thead><tr><th>#</th><th>名称</th><th>代码</th><th>涨跌幅</th><th>最新价</th><th>所属方向</th></tr></thead>
+      <tbody><tr><td>1</td><td>中邮科技</td><td class="code">688648</td><td style="color:#e94545;font-weight:600">+20.01%</td><td>34.66</td><td></td></tr>
+<tr><td>2</td><td>科瑞思</td><td class="code">301314</td><td style="color:#e94545;font-weight:600">+20.01%</td><td>56.14</td><td></td></tr>
+<tr><td>3</td><td>华阳智能</td><td class="code">301502</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>77.76</td><td></td></tr>
+<tr><td>4</td><td>达瑞电子</td><td class="code">300976</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>53.40</td><td></td></tr>
+<tr><td>5</td><td>奥雅股份</td><td class="code">300949</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>35.58</td><td></td></tr>
+<tr><td>6</td><td>泛亚微透</td><td class="code">688386</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>46.56</td><td></td></tr>
+<tr><td>7</td><td>上纬新材</td><td class="code">688585</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>151.57</td><td></td></tr>
+<tr><td>8</td><td>朗特智能</td><td class="code">300916</td><td style="color:#e94545;font-weight:600">+19.99%</td><td>34.27</td><td></td></tr>
+<tr><td>9</td><td>世纪恒通</td><td class="code">301428</td><td style="color:#e94545;font-weight:600">+17.74%</td><td>38.43</td><td></td></tr>
+<tr><td>10</td><td>江苏北人</td><td class="code">688218</td><td style="color:#e94545;font-weight:600">+15.98%</td><td>40.20</td><td></td></tr>
+<tr><td>11</td><td>盛天网络</td><td class="code">300494</td><td style="color:#e94545;font-weight:600">+14.62%</td><td>9.88</td><td></td></tr>
+<tr><td>12</td><td>维宏股份</td><td class="code">300508</td><td style="color:#e94545;font-weight:600">+14.02%</td><td>38.87</td><td></td></tr>
+<tr><td>13</td><td>莱美药业</td><td class="code">300006</td><td style="color:#e94545;font-weight:600">+13.17%</td><td>8.85</td><td></td></tr>
+<tr><td>14</td><td>万凯新材</td><td class="code">301216</td><td style="color:#e94545;font-weight:600">+13.15%</td><td>16.86</td><td></td></tr>
+<tr><td>15</td><td>近岸蛋白</td><td class="code">688137</td><td style="color:#e94545;font-weight:600">+13.08%</td><td>121.00</td><td></td></tr>
+<tr><td>16</td><td>德尔股份</td><td class="code">300473</td><td style="color:#e94545;font-weight:600">+12.54%</td><td>38.85</td><td></td></tr>
+<tr><td>17</td><td>山外山</td><td class="code">688410</td><td style="color:#e94545;font-weight:600">+12.49%</td><td>11.62</td><td></td></tr>
+<tr><td>18</td><td>金丹科技</td><td class="code">300829</td><td style="color:#e94545;font-weight:600">+11.83%</td><td>22.59</td><td></td></tr>
+<tr><td>19</td><td>华依科技</td><td class="code">688071</td><td style="color:#e94545;font-weight:600">+11.83%</td><td>53.14</td><td></td></tr>
+<tr><td>20</td><td>汇隆新材</td><td class="code">301057</td><td style="color:#e94545;font-weight:600">+11.42%</td><td>22.73</td><td></td></tr></tbody>
+    </table>
+    <div class="analysis"><p><strong>重点个股解析：</strong>涨幅榜清一色20cm涨停，中邮科技、科瑞思、华阳智能这些，基本都是小盘题材股。科瑞思还叠加了重大资产重组公告，资金炒的是重组预期。整体看，今天涨停结构偏小盘和事件驱动，不是普涨行情，追高要小心。</p></div>
+  </section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">涨停75跌停54，这情绪到底算好算坏？</p><h2>市场情绪温度计</h2><p class="summary">情绪定级：<strong style="color:#b9770b;font-size:16px">修复</strong></p><p class="summary">涨停75只，跌停54只，上涨2252家，下跌3156家。</p><div class="analysis"><p>情绪处在不温不火的修复期，涨停数还行但跌停也不少，说明分化严重。跟昨天比不算降温，但也没升温，资金在试错。明天大概率还是震荡分化，别指望普涨。</p></div></section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">停牌、重组、增持，今晚公告有看点。</p><h2>公告速评</h2><p class="summary">只基于公告原文说话，不猜小作文。</p><div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">华鑫股份(600621)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：筹划控股股东变更事项，股票停牌。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：控股股东要变，停牌期间不确定性大，复牌后走势得看具体方案。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">高争民爆(002827)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：筹划发行股份购买资产并募集配套资金，股票停牌。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：发行股份买资产，属于外延扩张，停牌前股价位置不高，复牌看资产质量。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">兴发集团(600141)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：控股股东全资子公司计划增持公司股份。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：控股股东方面真金白银增持，至少说明内部人对当前价位认可。</p></div></section>
+
+  <section class="card" style="background:rgba(245,166,35,0.05);border-left:4px solid #b9770b;"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">都在说风格切换，但有个数据不对劲。</p><h2>反共识一刻</h2><div class="analysis"><p>大家都在说科技股崩了、风格切换了，但你看成交额1.62万亿，钱根本没走，只是从半导体挪到了游戏白酒。这更像是一次高位板块的获利了结，而不是系统性撤退。元件板块跌近6%但领涨股胜宏科技还涨2.47%，说明板块内部分化，不是全军覆没。</p></div></section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">今天这几个消息，可能影响明天开盘。</p>
+    <h2>核心催化剂与新闻导读</h2>
+    <ul style="padding-left:20px;color:#555555;font-size:14px;line-height:1.8;"><li>游戏板块涨3.29%领跑，盛天网络涨14.62%，版号和政策预期在发酵。</li>
+<li>半导体板块跌3.84%，芯海科技却涨6.82%，板块内部分化明显。</li>
+<li>华鑫股份停牌筹划控股股东变更，券商合并重组预期再起。</li>
+<li>高争民爆停牌购买资产，民爆行业整合动作不断。</li>
+<li>白酒板块涨2.5%，皇台酒业涨停，消费防御属性受青睐。</li>
+<li>元件板块大跌5.93%，胜宏科技逆势涨2.47%，PCB方向有资金抄底。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">明天咋走？说点掏心窝子的大实话。</p>
+    <h2>后市研判与策略建议</h2>
+    <div class="analysis"><p>说实话，今天这行情挺磨人的。指数看着还行，但个股跌多涨少，追高容易被套，割肉又怕反弹。我的看法是，短期风格确实在往低估值防御板块偏，科技成长需要消化获利盘。明天重点看两点：一是半导体能不能止跌，二是游戏白酒的持续性。如果科技股继续阴跌，指数也扛不住。操作上，别急着抄底科技，也别追高防御板块，等市场选出方向再说。风险提示：以上都是个人复盘瞎聊，不构成任何投资建议，钱是自己的，下手前多想想。</p></div>
+    <div class="risk" style="margin-top:16px;">⚠️ 风险提示：以上分析基于公开数据整理，不构成投资建议。市场有风险，投资需谨慎。</div>
+  </section>
+
+  <section class="card" style="background:rgba(233,69,69,0.05);border-left:4px solid #e94545"><p class="analysis" style="font-size:14px;line-height:1.8">今天你的账户是红是绿？有没有被科技股坑到？评论区聊聊，让我看看不是我一个人难受。</p></section>
+
+  <footer>
+    数据来源：公开市场数据 | 报告生成于 2026-10-26 15:30（收盘）<br/>
+    <a href="https://gxj1991.github.io/RISE/" style="color:#e94545;text-decoration:none;">查看历史报告</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var RED = "#e94545";
+  var GREEN = "#07a35a";
+  function color(v){ return v >= 0 ? RED : GREEN; }
+
+  var indexData = [{"name": "上证指数", "value": 0.19}, {"name": "科创50", "value": -2.23}, {"name": "深证成指", "value": -1.2}, {"name": "创业板指", "value": -1.71}];
+  echarts.init(document.getElementById("chartIndex")).setOption({
+    tooltip: { trigger: "axis", formatter: function(p){ var d=p[0]; return d.name + "：" + (d.value>=0?"+":"") + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "4%", bottom: "3%", containLabel: true },
+    xAxis: { type: "category", data: indexData.map(function(i){ return i.name; }), axisLabel: { color: "#555555" } },
+    yAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    series: [{ type: "bar", data: indexData.map(function(i){ return { value: i.value, itemStyle: { color: color(i.value) } }; }), barWidth: "45%",
+      label: { show: true, position: "top", formatter: function(p){ return (p.value>=0?"+":"") + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var sectorData = [{"name": "游戏", "value": 3.29}, {"name": "医药商业", "value": 3.09}, {"name": "白酒", "value": 2.5}, {"name": "油气开采及服务", "value": 2.3}, {"name": "保险", "value": 1.72}, {"name": "银行", "value": 1.52}];
+  echarts.init(document.getElementById("chartSector")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: sectorData.map(function(s){ return s.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: sectorData.map(function(s){ return { value: s.value, itemStyle: { color: color(s.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var conceptData = [{"name": "乳业", "value": 2.12}, {"name": "证金持股", "value": 1.97}, {"name": "免税店", "value": 1.79}, {"name": "芬太尼", "value": 1.75}, {"name": "网络游戏", "value": 1.68}, {"name": "可燃冰", "value": 1.65}];
+  echarts.init(document.getElementById("chartStocks")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: conceptData.map(function(c){ return c.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: conceptData.map(function(c){ return { value: c.value, itemStyle: { color: color(c.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+})();
+</script>
+</body>
+</html>
