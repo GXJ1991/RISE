@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4700家下跌，133只跌停，今天谁在硬扛？｜10.29复盘</title>
+<meta property="og:title" content="4700家下跌，133只跌停，今天谁在硬扛？｜10.29复盘" />
+<meta property="og:description" content="10月29日A股普跌，上证跌0.82%守住3651点，创业板指跌4.45%，科创50跌4.28%。全市场4727家下跌、133只跌停，成交额1.57万亿。银行、保险、煤炭逆势飘红，半导体、通信设备、元件领跌，资金明显往低估值防守方向躲。" />
+<meta property="og:image" content="https://gxj1991.github.io/RISE/images/chart-index.png" />
+<meta property="og:url" content="https://gxj1991.github.io/RISE/" />
+<meta property="og:type" content="article" />
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #fafbfc; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+  header { text-align: center; padding: 24px 0; border-bottom: 2px solid #e8e8ec; margin-bottom: 24px; }
+  header h1 { margin: 0; font-size: 26px; letter-spacing: -0.5px; }
+  header .date { color: #888888; font-size: 14px; margin-top: 6px; }
+  .datatime { display:inline-block; margin-top:8px; padding:2px 10px; border-radius:4px; background:rgba(7,163,90,0.1); color:#07a35a; font-size:12px; }
+  .card { background: #ffffff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 20px; margin-bottom: 20px; }
+  h2 { font-size: 18px; margin: 0 0 14px 0; padding-bottom: 8px; border-bottom: 2px solid #e94545; display: inline-block; }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  .tldr li { margin-bottom: 8px; color: #555555; }
+  .summary { color: #555555; font-size: 14px; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 14px; }
+  th, td { padding: 10px 8px; border-bottom: 1px solid #e8e8ec; text-align: left; }
+  th { color: #888888; font-weight: 600; font-size: 12px; background: #fafbfc; }
+  .code { font-family: "SFMono-Regular", Consolas, monospace; color: #888888; font-size: 12px; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:12px; font-weight:600; white-space:nowrap; }
+  .tag-1 { background:rgba(233,69,69,0.12); color:#e94545; }
+  .tag-2 { background:rgba(245,166,35,0.16); color:#b9770b; }
+  .tag-3 { background:rgba(7,163,90,0.12); color:#07a35a; }
+  .chart { width: 100%; height: 360px; margin: 16px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+  .analysis { color: #555555; font-size: 14px; line-height: 1.8; }
+  .analysis p { margin: 0 0 10px 0; }
+  .risk { background: rgba(233,69,69,0.06); border-left: 4px solid #e94545; padding: 12px 16px; border-radius: 0 8px 8px 0; color: #555555; font-size: 14px; }
+  footer { text-align: center; color: #888888; font-size: 12px; padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>A股每日复盘</h1>
+    <div class="date">2026年10月29日 星期四</div>
+    <div class="datatime">收盘数据（2026-10-29 15:30 收盘）</div>
+  </header>
+
+  <section class="card"><p class="analysis" style="font-size:14px;line-height:1.8">说实话，今天这盘面看得我有点闷。早上还想着昨天那点反弹能接上，结果开盘没多久创业板就一路往下走，越走越没力气。我翻了下涨跌家数，4700多家绿的，跌停133只，这场面真不是开玩笑。手里有科技票的朋友，今天估计都不太想打开账户。</p></section>
+
+  <section class="card tldr">
+    <h2>核心结论</h2>
+    <ul><li>4727家下跌、133只跌停，这是普跌不是调整，赚钱的人今天真不多。</li>
+<li>上证只跌0.82%，创业板跌4.45%，指数分化说明资金在往防守方向躲。</li>
+<li>银行涨1.98%、保险涨1.61%、煤炭涨0.73%，低估值板块成了避风港。</li>
+<li>半导体跌5.54%、通信设备跌5.63%、元件跌7.08%，科技成长今天是重灾区。</li>
+<li>成交1.57万亿没缩量，跌的时候量还在，说明抛压是真在释放。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">指数跌得不算多，可账户怎么这么疼？</p>
+    <h2>大盘概况</h2>
+    <p class="summary">上涨781家，下跌4727家，平盘68家。涨停46只，跌停133只。跌停比涨停多了快三倍，这不是结构性调整，是实打实的普跌，今天能红的票都算硬骨头。 两市成交1.57万亿，量没缩。跌的时候量还在，说明不是没人玩了，是有人在真金白银地卖。缩量跌还能说是惜售，放量跌就得多个心眼。</p>
+    <table>
+      <thead><tr><th>指数</th><th>点位</th><th>涨跌幅</th><th>成交额（亿元）</th></tr></thead>
+      <tbody><tr><td>上证指数</td><td>3,651.43</td><td style="color:#07a35a;font-weight:600">-0.82%</td><td>7,156.21</td></tr>
+<tr><td>科创50</td><td>1,228.09</td><td style="color:#07a35a;font-weight:600">-4.28%</td><td>711.00</td></tr>
+<tr><td>深证成指</td><td>11,138.20</td><td style="color:#07a35a;font-weight:600">-2.92%</td><td>8,408.96</td></tr>
+<tr><td>创业板指</td><td>2,517.59</td><td style="color:#07a35a;font-weight:600">-4.45%</td><td>4,193.57</td></tr></tbody>
+    </table>
+    <div id="chartIndex" class="chart"></div>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">一边银行红一边芯片绿，这钱躲得真明显</p>
+    <h2>板块资金异动分析</h2>
+    <div class="two-col">
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块涨幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>银行</td><td style="color:#e94545;font-weight:600">+1.98%</td><td>青岛银行 (002948)</td><td style="color:#e94545;font-weight:600">+8.02%</td></tr>
+<tr><td>2</td><td>风电设备</td><td style="color:#e94545;font-weight:600">+1.64%</td><td>飞沃科技 (301232)</td><td style="color:#e94545;font-weight:600">+17.09%</td></tr>
+<tr><td>3</td><td>保险</td><td style="color:#e94545;font-weight:600">+1.61%</td><td>中国太保 (601601)</td><td style="color:#e94545;font-weight:600">+3.88%</td></tr>
+<tr><td>4</td><td>煤炭开采加工</td><td style="color:#e94545;font-weight:600">+0.73%</td><td>开滦股份 (600997)</td><td style="color:#e94545;font-weight:600">+10.00%</td></tr>
+<tr><td>5</td><td>公路铁路运输</td><td style="color:#e94545;font-weight:600">+0.39%</td><td>龙江交通 (601188)</td><td style="color:#e94545;font-weight:600">+10.06%</td></tr>
+<tr><td>6</td><td>影视院线</td><td style="color:#e94545;font-weight:600">+0.35%</td><td>文投控股 (600715)</td><td style="color:#e94545;font-weight:600">+10.19%</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块跌幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领跌股</th><th>跌幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>元件</td><td style="color:#07a35a;font-weight:600">-7.08%</td><td>金安国纪 (002636)</td><td style="color:#07a35a;font-weight:600">-1.20%</td></tr>
+<tr><td>2</td><td>通信设备</td><td style="color:#07a35a;font-weight:600">-5.63%</td><td>信科移动 (688387)</td><td style="color:#e94545;font-weight:600">+5.54%</td></tr>
+<tr><td>3</td><td>半导体</td><td style="color:#07a35a;font-weight:600">-5.54%</td><td>康希通信 (688653)</td><td style="color:#e94545;font-weight:600">+4.33%</td></tr>
+<tr><td>4</td><td>自动化设备</td><td style="color:#07a35a;font-weight:600">-5.17%</td><td>奥普特 (688686)</td><td style="color:#e94545;font-weight:600">+4.73%</td></tr>
+<tr><td>5</td><td>电机</td><td style="color:#07a35a;font-weight:600">-5.08%</td><td>大洋电机 (002249)</td><td style="color:#e94545;font-weight:600">+3.24%</td></tr>
+<tr><td>6</td><td>其他电子</td><td style="color:#07a35a;font-weight:600">-4.93%</td><td>久之洋 (300516)</td><td style="color:#e94545;font-weight:600">+3.87%</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="chartSector" class="chart"></div>
+    <h3 style="font-size:15px;margin:20px 0 10px 0;color:#1a1a1a">概念板块涨幅 TOP6</h3>
+    <table>
+      <thead><tr><th>#</th><th>概念</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+      <tbody><tr><td>1</td><td>证金持股</td><td style="color:#e94545;font-weight:600">+0.97%</td><td>中国神华 (601088)</td><td style="color:#e94545;font-weight:600">+3.97%</td></tr>
+<tr><td>2</td><td>赛马概念</td><td style="color:#e94545;font-weight:600">+0.39%</td><td>*ST正平 (603843)</td><td style="color:#e94545;font-weight:600">+8.90%</td></tr>
+<tr><td>3</td><td>高股息精选</td><td style="color:#e94545;font-weight:600">+0.28%</td><td>阳光照明 (600261)</td><td style="color:#e94545;font-weight:600">+10.06%</td></tr>
+<tr><td>4</td><td>高压氧舱</td><td style="color:#e94545;font-weight:600">+0.21%</td><td>澳洋健康 (002172)</td><td style="color:#e94545;font-weight:600">+10.04%</td></tr>
+<tr><td>5</td><td>同花顺中特估100</td><td style="color:#e94545;font-weight:600">+0.11%</td><td>中国广核 (003816)</td><td style="color:#e94545;font-weight:600">+7.22%</td></tr>
+<tr><td>6</td><td>国产航母</td><td style="color:#07a35a;font-weight:600">-0.03%</td><td>中国卫星 (600118)</td><td style="color:#e94545;font-weight:600">+10.00%</td></tr></tbody>
+    </table>
+    <div id="chartStocks" class="chart"></div>
+    <p class="summary">今天资金的方向特别直白，往银行、保险、煤炭、公路铁路这些低估值高股息的地方躲。银行板块涨1.98%，青岛银行涨8.02%领跑；保险涨1.61%，中国太保涨3.88%。另一边，元件跌7.08%、通信设备跌5.63%、半导体跌5.54%，科技成长被抽得厉害。概念上证金持股、高股息精选这些防守标签飘红，说明大资金今天想的是先保住仓位，不是去搏弹性。</p>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">涨停名单里，我看到了几个熟悉的味道</p>
+    <h2>热门个股分析</h2>
+    <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">涨幅 TOP20</h3>
+    <table>
+      <thead><tr><th>#</th><th>名称</th><th>代码</th><th>涨跌幅</th><th>最新价</th><th>所属方向</th></tr></thead>
+      <tbody><tr><td>1</td><td>N天元</td><td class="code">920306</td><td style="color:#e94545;font-weight:600">+120.54%</td><td>9.88</td><td></td></tr>
+<tr><td>2</td><td>邵阳液压</td><td class="code">301079</td><td style="color:#e94545;font-weight:600">+20.01%</td><td>34.00</td><td></td></tr>
+<tr><td>3</td><td>飞沃科技</td><td class="code">301232</td><td style="color:#e94545;font-weight:600">+17.09%</td><td>80.30</td><td></td></tr>
+<tr><td>4</td><td>中海达</td><td class="code">300177</td><td style="color:#e94545;font-weight:600">+14.20%</td><td>7.16</td><td></td></tr>
+<tr><td>5</td><td>海力风电</td><td class="code">301155</td><td style="color:#e94545;font-weight:600">+12.43%</td><td>39.99</td><td></td></tr>
+<tr><td>6</td><td>福事特</td><td class="code">301446</td><td style="color:#e94545;font-weight:600">+12.34%</td><td>42.15</td><td></td></tr>
+<tr><td>7</td><td>天力复合</td><td class="code">920576</td><td style="color:#e94545;font-weight:600">+12.26%</td><td>36.80</td><td></td></tr>
+<tr><td>8</td><td>电科蓝天</td><td class="code">688818</td><td style="color:#e94545;font-weight:600">+11.82%</td><td>46.37</td><td></td></tr>
+<tr><td>9</td><td>西测测试</td><td class="code">301306</td><td style="color:#e94545;font-weight:600">+11.75%</td><td>84.84</td><td></td></tr>
+<tr><td>10</td><td>文投控股</td><td class="code">600715</td><td style="color:#e94545;font-weight:600">+10.19%</td><td>2.27</td><td></td></tr>
+<tr><td>11</td><td>爱建集团</td><td class="code">600643</td><td style="color:#e94545;font-weight:600">+10.10%</td><td>4.25</td><td></td></tr>
+<tr><td>12</td><td>山东矿机</td><td class="code">002526</td><td style="color:#e94545;font-weight:600">+10.07%</td><td>3.28</td><td></td></tr>
+<tr><td>13</td><td>龙江交通</td><td class="code">601188</td><td style="color:#e94545;font-weight:600">+10.06%</td><td>3.50</td><td></td></tr>
+<tr><td>14</td><td>阳光照明</td><td class="code">600261</td><td style="color:#e94545;font-weight:600">+10.06%</td><td>3.72</td><td></td></tr>
+<tr><td>15</td><td>中远海特</td><td class="code">600428</td><td style="color:#e94545;font-weight:600">+10.05%</td><td>11.39</td><td></td></tr>
+<tr><td>16</td><td>澳洋健康</td><td class="code">002172</td><td style="color:#e94545;font-weight:600">+10.04%</td><td>5.37</td><td></td></tr>
+<tr><td>17</td><td>航天晨光</td><td class="code">600501</td><td style="color:#e94545;font-weight:600">+10.03%</td><td>16.89</td><td></td></tr>
+<tr><td>18</td><td>横店影视</td><td class="code">603103</td><td style="color:#e94545;font-weight:600">+10.03%</td><td>17.44</td><td></td></tr>
+<tr><td>19</td><td>盛洋科技</td><td class="code">603703</td><td style="color:#e94545;font-weight:600">+10.03%</td><td>10.86</td><td></td></tr>
+<tr><td>20</td><td>巴比食品</td><td class="code">605338</td><td style="color:#e94545;font-weight:600">+10.03%</td><td>18.98</td><td></td></tr></tbody>
+    </table>
+    <div class="analysis"><p><strong>重点个股解析：</strong>涨幅榜前排挺杂。N天元是新股首日涨120.54%，不具参考性；邵阳液压、飞沃科技、海力风电这几个跟风电设备沾边，算是今天少有的成板块的强势方向。中海达、西测测试、电科蓝天偏军工测试和航天，文投控股、爱建集团是低价小盘加影视金融。整体看，今天涨停的多是小盘题材和超跌反弹，没有大市值主线撑场。</p></div>
+  </section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">133只跌停，这情绪到底到哪一步了？</p><h2>市场情绪温度计</h2><p class="summary">情绪定级：<strong style="color:#07a35a;font-size:16px">退潮</strong></p><p class="summary">涨停46只，跌停133只，上涨781家，下跌4727家</p><div class="analysis"><p>今天情绪明显是退潮，跌停133只这个数摆在这，比涨停多了近三倍，赚钱效应基本没了。跟前几天比是明显降温，科技成长这条线被砸得最狠。明天大概率还有个惯性下探的过程，能不能稳住要看银行这些防守方向撑不撑得住，别急着抢反弹。</p></div></section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">盘后这几份公告，有几条值得看一眼</p><h2>公告速评</h2><p class="summary">只基于公告原文说话，不猜小作文。</p><div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">沐曦股份(688802)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：公司收到实际控制人、董事长提议回购公司股份的提示性公告。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：实控人提议回购，是公告层面释放的态度信号，具体方案和金额还得看后续细则。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">金奥博(002917)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：公司公告收购长春汇维科技股份有限公司80%股权。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：收购80%股权属于外延扩张，标的成色和对价细节公告里才说得清，先记一笔。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">炬华科技(300360)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：公司公告重大经营合同中标。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：重大合同中标是实打实的订单消息，金额和履约周期决定含金量，别只看标题。</p></div></section>
+
+  <section class="card" style="background:rgba(245,166,35,0.05);border-left:4px solid #b9770b;"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">都说科技崩了，但有个数据我觉得不对劲</p><h2>反共识一刻</h2><div class="analysis"><p>大家都在说今天科技崩了、资金全跑了，但我注意到成交额还有1.57万亿，并没缩。真要是恐慌出逃，量往往会先萎缩再放。今天更像是高位科技里的资金在换仓，往银行煤炭挪，不是整体撤离。另一个被忽视的信号是涨停还有46只，跌停133只里小盘居多，说明局部还有人敢做，只是不敢做大了。</p></div></section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">今天这几件事，明天可能还在发酵</p>
+    <h2>核心催化剂与新闻导读</h2>
+    <ul style="padding-left:20px;color:#555555;font-size:14px;line-height:1.8;"><li>银行板块逆势涨1.98%，青岛银行涨8.02%，低估值防守逻辑今天被资金投票。</li>
+<li>风电设备涨1.64%，飞沃科技涨17.09%，海力风电涨12.43%，是少数成板块的强势方向。</li>
+<li>半导体跌5.54%、元件跌7.08%，科技成长集体调整，前期涨幅大的方向压力集中释放。</li>
+<li>133只跌停创近期高位，小盘题材股杀跌明显，短线情绪退得快。</li>
+<li>盘后沐曦股份实控人提议回购、炬华科技中标重大合同，公告面还有零星亮点。</li>
+<li>证金持股、高股息精选概念飘红，防守型资金偏好今天很突出。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">跌成这样，明天到底该怕还是该等？</p>
+    <h2>后市研判与策略建议</h2>
+    <div class="analysis"><p>说大实话，今天这种跌法，明天早盘大概率还有惯性，别一看低开就手痒。现在的问题是科技成长这条线筹码松了，短期想马上V回去不现实，得给它时间消化。防守方向像银行、保险、煤炭今天扛住了，但它们是避风港不是发动机，指望它们带着指数反攻也不现实。我自己的思路是，先看明天跌停家数能不能明显收窄，这是情绪止跌的第一信号；再看成交量，如果缩量止跌，说明抛压释放得差不多，如果继续放量往下，那就还得等。仓位重的朋友别在恐慌里乱砍，仓位轻的也别急着抄，等信号比猜底靠谱。以上都是盘面复盘，不构成任何投资建议，钱是自己的，风险也得自己扛。</p></div>
+    <div class="risk" style="margin-top:16px;">⚠️ 风险提示：以上分析基于公开数据整理，不构成投资建议。市场有风险，投资需谨慎。</div>
+  </section>
+
+  <section class="card" style="background:rgba(233,69,69,0.05);border-left:4px solid #e94545"><p class="analysis" style="font-size:14px;line-height:1.8">今天就问一句，你手里今天红了几只？是被银行煤炭护住了，还是被科技票拖下水了？评论区聊聊，我看看大家今天都什么成色。</p></section>
+
+  <footer>
+    数据来源：公开市场数据 | 报告生成于 2026-10-29 15:30（收盘）<br/>
+    <a href="https://gxj1991.github.io/RISE/" style="color:#e94545;text-decoration:none;">查看历史报告</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var RED = "#e94545";
+  var GREEN = "#07a35a";
+  function color(v){ return v >= 0 ? RED : GREEN; }
+
+  var indexData = [{"name": "上证指数", "value": -0.82}, {"name": "科创50", "value": -4.28}, {"name": "深证成指", "value": -2.92}, {"name": "创业板指", "value": -4.45}];
+  echarts.init(document.getElementById("chartIndex")).setOption({
+    tooltip: { trigger: "axis", formatter: function(p){ var d=p[0]; return d.name + "：" + (d.value>=0?"+":"") + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "4%", bottom: "3%", containLabel: true },
+    xAxis: { type: "category", data: indexData.map(function(i){ return i.name; }), axisLabel: { color: "#555555" } },
+    yAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    series: [{ type: "bar", data: indexData.map(function(i){ return { value: i.value, itemStyle: { color: color(i.value) } }; }), barWidth: "45%",
+      label: { show: true, position: "top", formatter: function(p){ return (p.value>=0?"+":"") + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var sectorData = [{"name": "银行", "value": 1.98}, {"name": "风电设备", "value": 1.64}, {"name": "保险", "value": 1.61}, {"name": "煤炭开采加工", "value": 0.73}, {"name": "公路铁路运输", "value": 0.39}, {"name": "影视院线", "value": 0.35}];
+  echarts.init(document.getElementById("chartSector")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: sectorData.map(function(s){ return s.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: sectorData.map(function(s){ return { value: s.value, itemStyle: { color: color(s.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var conceptData = [{"name": "证金持股", "value": 0.97}, {"name": "赛马概念", "value": 0.39}, {"name": "高股息精选", "value": 0.28}, {"name": "高压氧舱", "value": 0.21}, {"name": "同花顺中特估100", "value": 0.11}, {"name": "国产航母", "value": -0.03}];
+  echarts.init(document.getElementById("chartStocks")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: conceptData.map(function(c){ return c.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: conceptData.map(function(c){ return { value: c.value, itemStyle: { color: color(c.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+})();
+</script>
+</body>
+</html>
