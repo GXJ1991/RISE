@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4600家上涨，半导体涨疯了，你踏空了吗？｜11.4复盘</title>
+<meta property="og:title" content="4600家上涨，半导体涨疯了，你踏空了吗？｜11.4复盘" />
+<meta property="og:description" content="11月4日A股普涨，上证涨2.16%站上3686点，创业板大涨6.4%，半导体板块飙升10.55%，涨停363只仅14只跌停，两市成交2.05万亿。半导体、贵金属、电子化学品领涨，市场情绪明显升温。" />
+<meta property="og:image" content="https://gxj1991.github.io/RISE/images/chart-index.png" />
+<meta property="og:url" content="https://gxj1991.github.io/RISE/" />
+<meta property="og:type" content="article" />
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #fafbfc; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+  header { text-align: center; padding: 24px 0; border-bottom: 2px solid #e8e8ec; margin-bottom: 24px; }
+  header h1 { margin: 0; font-size: 26px; letter-spacing: -0.5px; }
+  header .date { color: #888888; font-size: 14px; margin-top: 6px; }
+  .datatime { display:inline-block; margin-top:8px; padding:2px 10px; border-radius:4px; background:rgba(7,163,90,0.1); color:#07a35a; font-size:12px; }
+  .card { background: #ffffff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 20px; margin-bottom: 20px; }
+  h2 { font-size: 18px; margin: 0 0 14px 0; padding-bottom: 8px; border-bottom: 2px solid #e94545; display: inline-block; }
+  .tldr ul { margin: 0; padding-left: 20px; }
+  .tldr li { margin-bottom: 8px; color: #555555; }
+  .summary { color: #555555; font-size: 14px; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 14px; }
+  th, td { padding: 10px 8px; border-bottom: 1px solid #e8e8ec; text-align: left; }
+  th { color: #888888; font-weight: 600; font-size: 12px; background: #fafbfc; }
+  .code { font-family: "SFMono-Regular", Consolas, monospace; color: #888888; font-size: 12px; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:12px; font-weight:600; white-space:nowrap; }
+  .tag-1 { background:rgba(233,69,69,0.12); color:#e94545; }
+  .tag-2 { background:rgba(245,166,35,0.16); color:#b9770b; }
+  .tag-3 { background:rgba(7,163,90,0.12); color:#07a35a; }
+  .chart { width: 100%; height: 360px; margin: 16px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+  .analysis { color: #555555; font-size: 14px; line-height: 1.8; }
+  .analysis p { margin: 0 0 10px 0; }
+  .risk { background: rgba(233,69,69,0.06); border-left: 4px solid #e94545; padding: 12px 16px; border-radius: 0 8px 8px 0; color: #555555; font-size: 14px; }
+  footer { text-align: center; color: #888888; font-size: 12px; padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>A股每日复盘</h1>
+    <div class="date">2026年11月4日 星期三</div>
+    <div class="datatime">收盘数据（2026-11-04 15:30 收盘）</div>
+  </header>
+
+  <section class="card"><p class="analysis" style="font-size:14px;line-height:1.8">今天这盘面看得我有点懵，早上还在想会不会又是磨叽行情，结果半导体直接掀桌子了。看着自选里一堆红彤彤，说实话有点后悔昨天没多看一眼。群里都在喊踏空，我也没好到哪去，仓位轻得跟没买一样。</p></section>
+
+  <section class="card tldr">
+    <h2>核心结论</h2>
+    <ul><li>上证涨2.16%站上3686点，创业板飙6.4%，科创50涨9.92%，指数全线爆发。</li>
+<li>涨停363只跌停仅14只，上涨4667家，普涨格局，赚钱效应明显扩散。</li>
+<li>半导体板块涨10.55%领跑，京仪装备、芯源微等批量20cm涨停。</li>
+<li>两市成交2.05万亿，量能配合放大，资金进场意愿明显增强。</li>
+<li>公告回购增持扎堆，长鑫科技、均胜电子、盈峰环境等披露相关计划。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">指数全红，但真正炸裂的是这个数字</p>
+    <h2>大盘概况</h2>
+    <p class="summary">上涨4667家，下跌778家，平盘132家，涨停363只跌停14只。这数据不用多解释，基本是闭眼买都红的节奏，普涨得有点不真实。 两市成交2.05万亿，比平时明显放量。指数涨、量也跟上了，说明不是虚拉，资金真金白银在往里进，这点比单纯涨更让人踏实。</p>
+    <table>
+      <thead><tr><th>指数</th><th>点位</th><th>涨跌幅</th><th>成交额（亿元）</th></tr></thead>
+      <tbody><tr><td>上证指数</td><td>3,686.17</td><td style="color:#e94545;font-weight:600">+2.16%</td><td>9,532.65</td></tr>
+<tr><td>科创50</td><td>1,265.47</td><td style="color:#e94545;font-weight:600">+9.92%</td><td>1,045.20</td></tr>
+<tr><td>深证成指</td><td>11,335.69</td><td style="color:#e94545;font-weight:600">+4.22%</td><td>10,844.27</td></tr>
+<tr><td>创业板指</td><td>2,544.73</td><td style="color:#e94545;font-weight:600">+6.40%</td><td>5,470.99</td></tr></tbody>
+    </table>
+    <div id="chartIndex" class="chart"></div>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">半导体一天干出10个点，到底发生了什么</p>
+    <h2>板块资金异动分析</h2>
+    <div class="two-col">
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块涨幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>半导体</td><td style="color:#e94545;font-weight:600">+10.55%</td><td>京仪装备 (688652)</td><td style="color:#e94545;font-weight:600">+20.00%</td></tr>
+<tr><td>2</td><td>贵金属</td><td style="color:#e94545;font-weight:600">+10.08%</td><td>晓程科技 (300139)</td><td style="color:#e94545;font-weight:600">+19.99%</td></tr>
+<tr><td>3</td><td>电子化学品</td><td style="color:#e94545;font-weight:600">+9.00%</td><td>兴福电子 (688545)</td><td style="color:#e94545;font-weight:600">+17.25%</td></tr>
+<tr><td>4</td><td>元件</td><td style="color:#e94545;font-weight:600">+7.14%</td><td>三环集团 (300408)</td><td style="color:#e94545;font-weight:600">+14.77%</td></tr>
+<tr><td>5</td><td>自动化设备</td><td style="color:#e94545;font-weight:600">+6.04%</td><td>高凯技术 (688835)</td><td style="color:#e94545;font-weight:600">+20.00%</td></tr>
+<tr><td>6</td><td>其他电子</td><td style="color:#e94545;font-weight:600">+5.88%</td><td>富信科技 (688662)</td><td style="color:#e94545;font-weight:600">+11.55%</td></tr></tbody>
+        </table>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">行业板块跌幅 TOP6</h3>
+        <table>
+          <thead><tr><th>#</th><th>板块</th><th>涨跌幅</th><th>领跌股</th><th>跌幅</th></tr></thead>
+          <tbody><tr><td>1</td><td>nan</td><td style="color:#e94545;font-weight:600">+0.00%</td><td>nan</td><td style="color:#e94545;font-weight:600">+0.00%</td></tr>
+<tr><td>2</td><td>化学原料</td><td style="color:#e94545;font-weight:600">+1.64%</td><td>振华股份 (603067)</td><td style="color:#e94545;font-weight:600">+9.98%</td></tr>
+<tr><td>3</td><td>医疗器械</td><td style="color:#e94545;font-weight:600">+1.67%</td><td>洁特生物 (688026)</td><td style="color:#e94545;font-weight:600">+7.53%</td></tr>
+<tr><td>4</td><td>白色家电</td><td style="color:#e94545;font-weight:600">+1.88%</td><td>春光科技 (603657)</td><td style="color:#e94545;font-weight:600">+10.02%</td></tr>
+<tr><td>5</td><td>建筑材料</td><td style="color:#e94545;font-weight:600">+1.93%</td><td>国际复材 (301526)</td><td style="color:#e94545;font-weight:600">+11.98%</td></tr>
+<tr><td>6</td><td>橡胶制品</td><td style="color:#e94545;font-weight:600">+2.02%</td><td>科创新源 (300731)</td><td style="color:#e94545;font-weight:600">+10.60%</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="chartSector" class="chart"></div>
+    <h3 style="font-size:15px;margin:20px 0 10px 0;color:#1a1a1a">概念板块涨幅 TOP6</h3>
+    <table>
+      <thead><tr><th>#</th><th>概念</th><th>涨跌幅</th><th>领涨股</th><th>涨幅</th></tr></thead>
+      <tbody><tr><td>1</td><td>新型烟草(电子烟)</td><td style="color:#e94545;font-weight:600">+5.07%</td><td>唯科科技 (301196)</td><td style="color:#e94545;font-weight:600">+15.94%</td></tr>
+<tr><td>2</td><td>5G</td><td style="color:#e94545;font-weight:600">+5.06%</td><td>思瑞浦 (688536)</td><td style="color:#e94545;font-weight:600">+20.00%</td></tr>
+<tr><td>3</td><td>电子纸</td><td style="color:#e94545;font-weight:600">+5.01%</td><td>深科达 (688328)</td><td style="color:#e94545;font-weight:600">+15.87%</td></tr>
+<tr><td>4</td><td>无线充电</td><td style="color:#e94545;font-weight:600">+4.92%</td><td>中石科技 (300684)</td><td style="color:#e94545;font-weight:600">+13.31%</td></tr>
+<tr><td>5</td><td>毫米波雷达</td><td style="color:#e94545;font-weight:600">+4.90%</td><td>君正股份 (300223)</td><td style="color:#e94545;font-weight:600">+17.80%</td></tr>
+<tr><td>6</td><td>机器视觉</td><td style="color:#e94545;font-weight:600">+4.81%</td><td>杰普特 (688025)</td><td style="color:#e94545;font-weight:600">+19.21%</td></tr></tbody>
+    </table>
+    <div id="chartStocks" class="chart"></div>
+    <p class="summary">资金今天明显往科技线扎堆，半导体涨10.55%一枝独秀，电子化学品、元件、自动化设备跟着喝汤。贵金属也涨了10.08%，避险和进攻两头都有人抢。反过来看化学原料、医疗器械、白色家电这些只涨了一两个点，明显是被抽血了。这波轮动很干脆，钱从低位防守板块往高弹性科技搬，踏错方向的基本看戏。</p>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">涨停榜前排全是熟面孔，但有个细节不对劲</p>
+    <h2>热门个股分析</h2>
+    <h3 style="font-size:15px;margin:0 0 10px 0;color:#1a1a1a">涨幅 TOP20</h3>
+    <table>
+      <thead><tr><th>#</th><th>名称</th><th>代码</th><th>涨跌幅</th><th>最新价</th><th>所属方向</th></tr></thead>
+      <tbody><tr><td>1</td><td>腾信精密</td><td class="code">920298</td><td style="color:#e94545;font-weight:600">+30.00%</td><td>94.60</td><td></td></tr>
+<tr><td>2</td><td>艾能聚</td><td class="code">920770</td><td style="color:#e94545;font-weight:600">+29.99%</td><td>11.92</td><td></td></tr>
+<tr><td>3</td><td>蘅东光</td><td class="code">920045</td><td style="color:#e94545;font-weight:600">+21.80%</td><td>366.00</td><td></td></tr>
+<tr><td>4</td><td>金冠电气</td><td class="code">688517</td><td style="color:#e94545;font-weight:600">+20.02%</td><td>21.46</td><td></td></tr>
+<tr><td>5</td><td>春晖智控</td><td class="code">300943</td><td style="color:#e94545;font-weight:600">+20.02%</td><td>25.78</td><td></td></tr>
+<tr><td>6</td><td>贝特利</td><td class="code">301697</td><td style="color:#e94545;font-weight:600">+20.02%</td><td>25.42</td><td></td></tr>
+<tr><td>7</td><td>索辰科技</td><td class="code">688507</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>171.16</td><td></td></tr>
+<tr><td>8</td><td>京仪装备</td><td class="code">688652</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>94.13</td><td></td></tr>
+<tr><td>9</td><td>光智科技</td><td class="code">300489</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>190.30</td><td></td></tr>
+<tr><td>10</td><td>高凯技术</td><td class="code">688835</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>297.28</td><td></td></tr>
+<tr><td>11</td><td>强一股份</td><td class="code">688809</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>223.91</td><td></td></tr>
+<tr><td>12</td><td>芯源微</td><td class="code">688037</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>211.37</td><td></td></tr>
+<tr><td>13</td><td>富创精密</td><td class="code">688409</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>121.20</td><td></td></tr>
+<tr><td>14</td><td>正帆科技</td><td class="code">688596</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>50.64</td><td></td></tr>
+<tr><td>15</td><td>拓荆科技</td><td class="code">688072</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>487.79</td><td></td></tr>
+<tr><td>16</td><td>开勒股份</td><td class="code">301070</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>44.46</td><td></td></tr>
+<tr><td>17</td><td>中信出版</td><td class="code">300788</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>36.06</td><td></td></tr>
+<tr><td>18</td><td>华峰测控</td><td class="code">688200</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>218.53</td><td></td></tr>
+<tr><td>19</td><td>江丰电子</td><td class="code">300666</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>185.53</td><td></td></tr>
+<tr><td>20</td><td>思瑞浦</td><td class="code">688536</td><td style="color:#e94545;font-weight:600">+20.00%</td><td>269.24</td><td></td></tr></tbody>
+    </table>
+    <div class="analysis"><p><strong>重点个股解析：</strong>涨幅榜前排清一色20cm和30cm，腾信精密30cm涨停，艾能聚、蘅东光紧随其后。半导体链上京仪装备、芯源微、索辰科技、高凯技术批量20cm，高价股不少，说明不是纯小盘炒作，有资金在往硬科技里怼。结构上偏科技成长，不是ST垃圾股狂欢，这点还算健康。</p></div>
+  </section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">363只涨停，这情绪是高潮还是刚开始</p><h2>市场情绪温度计</h2><p class="summary">情绪定级：<strong style="color:#e94545;font-size:16px">高潮</strong></p><p class="summary">涨停363只，跌停14只，上涨4667家，涨跌停比接近26比1。</p><div class="analysis"><p>今天情绪直接顶到高潮区，涨停潮加普涨，赚钱效应拉满。和前几天比明显是升温，而且是急升。这种位置明天大概率还有惯性，但分化也会跟着来，追高得留个心眼。</p></div></section>
+
+  <section class="card"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">盘后公告扎堆，这几条值得看一眼</p><h2>公告速评</h2><p class="summary">只基于公告原文说话，不猜小作文。</p><div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">长鑫科技(688825)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：董事长提议增加回购股份金额。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：回购加码是公司自己掏钱的动作，至少说明管理层对当前股价有态度，但具体金额还没定，得看后续方案。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">均胜电子(600699)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：披露以集中竞价方式回购股份的方案。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：回购方案落地，属于常规护盘动作，对短期情绪有支撑，实际力度要看执行节奏。</p></div>
+<div style="border-top:1px solid #e8e8ec;padding:12px 0;"><p style="margin:0 0 4px 0;font-weight:600;color:#1a1a1a">盈峰环境(000967)</p><p style="margin:0 0 3px 0;font-size:14px;color:#1a1a1a">公告：董事长兼总裁计划增持公司股份。</p><p style="margin:0;font-size:13px;color:#555555;line-height:1.7">点评：高管真金白银增持，比喊话实在，但增持计划有期限和金额区间，别当成短期刺激。</p></div></section>
+
+  <section class="card" style="background:rgba(245,166,35,0.05);border-left:4px solid #b9770b;"><p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">都在喊牛回速归，我却盯上了另一个信号</p><h2>反共识一刻</h2><div class="analysis"><p>大家都在喊半导体涨停潮、牛回速归，但我注意到今天跌停只有14只，下跌家数778家，说明几乎没有明显的亏钱效应。这种普涨往往意味着情绪一次性打得太满，后面两天如果量能跟不上，分化会比今天凶得多。涨得越顺，越要留意谁在悄悄撤。</p></div></section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">今天这几个消息，可能是行情的引子</p>
+    <h2>核心催化剂与新闻导读</h2>
+    <ul style="padding-left:20px;color:#555555;font-size:14px;line-height:1.8;"><li>半导体板块单日涨10.55%，京仪装备、芯源微、索辰科技等多股20cm涨停，科技主线全面爆发。</li>
+<li>贵金属板块涨10.08%，晓程科技涨近20%，避险和通胀预期两头都有资金关注。</li>
+<li>两市成交额放大到2.05万亿，量价齐升，资金进场迹象明显。</li>
+<li>盘后回购增持公告扎堆，长鑫科技、均胜电子、盈峰环境、卧龙电驱等纷纷披露。</li>
+<li>创业板指涨6.4%、科创50涨9.92%，成长风格全面占优，市场风险偏好抬升。</li>
+<li>涨停家数363只、跌停仅14只，短线赚钱效应扩散到多数板块。</li></ul>
+  </section>
+
+  <section class="card">
+    <p style="font-size:14px;color:#e94545;font-weight:600;margin:0 0 10px 0;padding-left:10px;border-left:3px solid #e94545">涨成这样，明天还敢追吗</p>
+    <h2>后市研判与策略建议</h2>
+    <div class="analysis"><p>今天这根阳线确实提气，量也放出来了，短期情绪大概率还能延续一下。但说实话，半导体一天干10个点，这个斜率太陡，明天追进去的人很容易买在分时高点。我的想法是，没上车的别急着扑，等分歧回踩再看；已经在车上的，可以拿一拿但别加太猛。风险点在于量能能不能持续，如果明天成交缩下来而指数滞涨，那就是短线退潮的信号。另外今天普涨太一致，历史上太一致的日子后面往往有反复。以上都是个人复盘瞎聊，不构成任何投资建议，钱是自己的，手别太快。</p></div>
+    <div class="risk" style="margin-top:16px;">⚠️ 风险提示：以上分析基于公开数据整理，不构成投资建议。市场有风险，投资需谨慎。</div>
+  </section>
+
+  <section class="card" style="background:rgba(233,69,69,0.05);border-left:4px solid #e94545"><p class="analysis" style="font-size:14px;line-height:1.8">今天这行情，你是吃上肉了还是又踏空了？手里拿的是半导体还是还在低位蹲着？评论区聊聊，我看看有多少人跟我一样拍大腿。</p></section>
+
+  <footer>
+    数据来源：公开市场数据 | 报告生成于 2026-11-04 15:30（收盘）<br/>
+    <a href="https://gxj1991.github.io/RISE/" style="color:#e94545;text-decoration:none;">查看历史报告</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var RED = "#e94545";
+  var GREEN = "#07a35a";
+  function color(v){ return v >= 0 ? RED : GREEN; }
+
+  var indexData = [{"name": "上证指数", "value": 2.16}, {"name": "科创50", "value": 9.92}, {"name": "深证成指", "value": 4.22}, {"name": "创业板指", "value": 6.4}];
+  echarts.init(document.getElementById("chartIndex")).setOption({
+    tooltip: { trigger: "axis", formatter: function(p){ var d=p[0]; return d.name + "：" + (d.value>=0?"+":"") + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "4%", bottom: "3%", containLabel: true },
+    xAxis: { type: "category", data: indexData.map(function(i){ return i.name; }), axisLabel: { color: "#555555" } },
+    yAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    series: [{ type: "bar", data: indexData.map(function(i){ return { value: i.value, itemStyle: { color: color(i.value) } }; }), barWidth: "45%",
+      label: { show: true, position: "top", formatter: function(p){ return (p.value>=0?"+":"") + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var sectorData = [{"name": "半导体", "value": 10.55}, {"name": "贵金属", "value": 10.08}, {"name": "电子化学品", "value": 9.0}, {"name": "元件", "value": 7.14}, {"name": "自动化设备", "value": 6.04}, {"name": "其他电子", "value": 5.88}];
+  echarts.init(document.getElementById("chartSector")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: sectorData.map(function(s){ return s.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: sectorData.map(function(s){ return { value: s.value, itemStyle: { color: color(s.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+
+  var conceptData = [{"name": "新型烟草(电子烟)", "value": 5.07}, {"name": "5G", "value": 5.06}, {"name": "电子纸", "value": 5.01}, {"name": "无线充电", "value": 4.92}, {"name": "毫米波雷达", "value": 4.9}, {"name": "机器视觉", "value": 4.81}];
+  echarts.init(document.getElementById("chartStocks")).setOption({
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, formatter: function(p){ var d=p[0]; return d.name + "：" + d.value.toFixed(2) + "%"; } },
+    grid: { left: "3%", right: "8%", bottom: "3%", containLabel: true },
+    xAxis: { type: "value", axisLabel: { formatter: "{value}%", color: "#555555" }, splitLine: { lineStyle: { color: "#e8e8ec" } } },
+    yAxis: { type: "category", data: conceptData.map(function(c){ return c.name; }).reverse(), axisLabel: { color: "#555555" } },
+    series: [{ type: "bar", data: conceptData.map(function(c){ return { value: c.value, itemStyle: { color: color(c.value) } }; }).reverse(), barWidth: "55%",
+      label: { show: true, position: "right", formatter: function(p){ return "+" + p.value.toFixed(2) + "%"; }, color: "#1a1a1a" } }]
+  });
+})();
+</script>
+</body>
+</html>
