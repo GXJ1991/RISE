@@ -6,19 +6,19 @@
 <title>判断力日志</title>
 <style>
   :root{
-    --bg:#0d1117;
-    --bg-soft:#12171f;
-    --card:#1a2029;
-    --card-hover:#202834;
-    --border:#2b323d;
-    --text:#e6edf3;
-    --muted:#8b96a5;
-    --green:#00d68f;
+    --bg:#f5f7fa;
+    --bg-soft:#eef2f6;
+    --card:#ffffff;
+    --card-hover:#f8fafc;
+    --border:#dce3ea;
+    --text:#1f2937;
+    --muted:#64748b;
+    --green:#0f9d73;
     --green-dim:#0b8f62;
-    --green-soft:rgba(0,214,143,.10);
-    --up:#ff5b5b;
-    --down:#00d68f;
-    --amber:#e3b341;
+    --green-soft:rgba(15,157,115,.10);
+    --up:#dc2626;
+    --down:#16a34a;
+    --amber:#b45309;
     --radius:14px;
     --maxw:1080px;
   }
@@ -35,7 +35,7 @@
 
   header{
     position:sticky;top:0;z-index:50;
-    background:rgba(13,17,23,.92);
+    background:rgba(255,255,255,.94);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--border);
   }
@@ -96,10 +96,10 @@
   .preview .meta{color:var(--muted);font-size:12px}
 
   .disclaimer{
-    background:rgba(227,179,65,.08);border:1px solid rgba(227,179,65,.25);
+    background:rgba(180,83,9,.08);border:1px solid rgba(180,83,9,.25);
     border-radius:12px;padding:14px 18px;color:var(--amber);font-size:13px;margin-bottom:24px;
   }
-  .disclaimer b{color:#f0c75e}
+  .disclaimer b{color:#92400e}
 
   .item{
     background:var(--card);border:1px solid var(--border);
@@ -113,8 +113,8 @@
   .item ul{margin:8px 0 0 18px;color:var(--muted);font-size:14px}
   .item li{margin-bottom:4px}
   .badge{font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--border);color:var(--muted)}
-  .badge.up{color:var(--up);border-color:rgba(255,91,91,.35);background:rgba(255,91,91,.08)}
-  .badge.down{color:var(--down);border-color:rgba(0,214,143,.35);background:var(--green-soft)}
+  .badge.up{color:var(--up);border-color:rgba(220,38,38,.35);background:rgba(220,38,38,.08)}
+  .badge.down{color:var(--down);border-color:rgba(22,163,74,.35);background:rgba(22,163,74,.08)}
   .badge.info{color:var(--green);border-color:var(--green-dim);background:var(--green-soft)}
 
   .index-row{display:flex;gap:22px;flex-wrap:wrap;margin:12px 0 6px}
@@ -158,7 +158,7 @@
   .gh-card .gh-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}
   .gh-card .gh-name{font-size:14px;font-weight:600;color:var(--text)}
   .gh-card .tag{font-size:11px;color:var(--muted);border:1px solid var(--border);padding:2px 9px;border-radius:20px}
-  .gh-card .tag.star{color:var(--amber);border-color:rgba(227,179,65,.35)}
+  .gh-card .tag.star{color:var(--amber);border-color:rgba(180,83,9,.35)}
   .gh-card .gh-tagline{color:var(--text);font-size:14px;margin-bottom:16px}
   .gh-card .gh-label{font-size:11px;color:var(--green);font-weight:500;
     letter-spacing:.5px;margin:14px 0 8px}
@@ -167,12 +167,12 @@
   .gh-card .gh-scene{background:var(--bg-soft);border-radius:8px;padding:12px 14px;
     color:var(--text);font-size:13px}
   .gh-card .gh-scene b{color:var(--green);font-weight:500}
-  .gh-card .gh-caveat{background:rgba(227,179,65,.07);border:1px solid rgba(227,179,65,.22);
+  .gh-card .gh-caveat{background:rgba(180,83,9,.07);border:1px solid rgba(180,83,9,.22);
     border-radius:8px;padding:12px 14px;color:var(--amber);font-size:13px}
-  .gh-card .gh-caveat b{color:#f0c75e;font-weight:500}
+  .gh-card .gh-caveat b{color:#92400e;font-weight:500}
   .gh-card .gh-link{display:inline-block;margin-top:14px;color:var(--green);font-size:12px;
     text-decoration:none;border-bottom:1px solid var(--green-dim);padding-bottom:2px}
-  .gh-card .gh-link:hover{color:#00f0a0}
+  .gh-card .gh-link:hover{color:#0b8f62}
   .gh-card .verdict{color:var(--muted);font-size:13px;font-style:italic;
     border-left:2px solid var(--green-dim);padding-left:12px;margin-top:16px}
 
@@ -187,9 +187,9 @@
   .gh-brief .brief-row b{color:var(--green);font-weight:500}
   .gh-brief .brief-link{font-size:12px;color:var(--green);text-decoration:none;
     border-bottom:1px solid var(--green-dim);padding-bottom:2px;display:inline-block;margin-top:8px}
-  .gh-brief .brief-link:hover{color:#00f0a0}
-  .brief-note{color:var(--amber);font-size:12px;background:rgba(227,179,65,.07);
-    border:1px solid rgba(227,179,65,.22);border-radius:8px;padding:10px 14px;margin-top:4px}
+  .gh-brief .brief-link:hover{color:#0b8f62}
+  .brief-note{color:var(--amber);font-size:12px;background:rgba(180,83,9,.07);
+    border:1px solid rgba(180,83,9,.22);border-radius:8px;padding:10px 14px;margin-top:4px}
 
   /* 热点雷达 */
   .radar-head{display:flex;align-items:center;gap:16px;margin-bottom:14px}
@@ -200,7 +200,7 @@
   .radar-visual::before{inset:9px}
   .radar-visual::after{inset:18px}
   .radar-sweep{position:absolute;inset:0;
-    background:conic-gradient(from 0deg,transparent 0deg,rgba(0,240,160,.3) 42deg,transparent 43deg);
+    background:conic-gradient(from 0deg,transparent 0deg,rgba(15,157,115,.28) 42deg,transparent 43deg);
     animation:radar-scan 4s linear infinite}
   @keyframes radar-scan{to{transform:rotate(360deg)}}
   .radar-title{font-size:14px;font-weight:600;color:var(--green)}
@@ -210,7 +210,7 @@
     background:var(--card);padding:5px 14px;border-radius:20px;cursor:pointer;
     transition:.2s;font-family:inherit}
   .radar-chip:hover{border-color:var(--green-dim);color:var(--text)}
-  .radar-chip.on{color:var(--green);border-color:var(--green-dim);background:rgba(0,240,160,.06)}
+  .radar-chip.on{color:var(--green);border-color:var(--green-dim);background:rgba(15,157,115,.08)}
   .gh-brief .brief-hook{font-size:16px;font-weight:600;color:var(--green);
     line-height:1.5;margin-bottom:10px}
   .gh-brief .brief-cat{font-size:11px;color:var(--muted);border:1px solid var(--border);
